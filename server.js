@@ -12,7 +12,7 @@ const db = process.env.DATABASE.replace('<PASSWORD>', process.env.DATABASE_PASSW
 
 mongoose.connect(db).then(() => { console.log("database is connected...") });
 
-app.use('/a', tourRouter);
+app.use('/v1', tourRouter);
 app.use(errorHandlar);
 
 app.listen(port, () => {

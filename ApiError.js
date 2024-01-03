@@ -1,4 +1,4 @@
-class AppError extends Error {
+class ApiError extends Error {
     constructor(message, statusCode) {
         super(message);
         console.log('error')
@@ -10,4 +10,4 @@ class AppError extends Error {
     }
 }
 
-export { AppError };
+export { ApiError };
